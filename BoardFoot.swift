@@ -16,7 +16,7 @@ import Foundation
 
 // This function calculates the length of a board per one
 // board foot then returns it to the user.
-func CalculateBoardFoot(width: Double, height: Double) -> Double {
+func calculateBoardFoot(width: Double, height: Double) -> Double {
     // Declare constant.
     let ONE_BOARD_LENGTH = 144.0
     
@@ -45,7 +45,7 @@ if let userWidth = Double(readLine()!) {
         // user enters positive or negative value.
         if userWidth >= 0 && userHeight >= 0 {
             // Call function for positive values.
-            let length = CalculateBoardFoot(width:userWidth, height:userHeight)
+            let length = calculateBoardFoot(width:userWidth, height:userHeight)
 
             // Display results to user.
             print("The board length would be ", terminator: "")
